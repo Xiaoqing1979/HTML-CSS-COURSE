@@ -1,0 +1,124 @@
+.header {
+  height: 57px;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+
+  /* border-bottom: 1px solid #dedede; */
+  margin-bottom: 20px;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.hamburg-menu {
+  height: 26px;
+  margin-left: 27px;
+  margin-right: 27px;
+}
+
+.youtube-logo {
+  height: 22px;
+}
+
+.middle-section {
+  max-width: 660px;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  display: flex;
+  /* align-items: center; */
+}
+
+.search-bar {
+  height: 40px;
+  flex: 1;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.search-button {
+  height: 44px;
+  width: 70px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  align-items: center;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+
+.search-icon {
+  height: 25px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.voice-search-button {
+  height: 44px;
+  width: 44px;
+  border-radius: 22px;
+  border: none;
+  margin-left: 20px;
+}
+
+.voice-search-icon {
+  height: 25px;
+  margin-top: 4px;
+}
+
+
+.right-section {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.upload-button,
+.notofications-button,
+.current-user-button {
+  width: 44px;
+  height: 44px;
+  border: 0px;
+  background-color: transparent;
+}
+
+.current-user-button {
+  margin-right: 16px;
+}
+
+.upload-iocn,
+.notification {
+  height: 25px;
+}
+
+.current-user-icon {
+  height: 32px;
+  border-radius: 16px;
+  cursor: pointer;
+}
