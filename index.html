@@ -22,7 +22,7 @@
       <img class="youtube-logo" src="icons/youtube-logo.svg">
     </div>
     <div class="middle-section">
-      <input class="search-bar" type="text" placeholder="Search">
+      <input class="search-bar" id="search-input-box" type="text" placeholder="Search anything" autocomplete="off">
       <button class="search-button">
         <img class="search-icon" src="icons/search.svg">
       </button>
@@ -35,13 +35,22 @@
         <img class="upload-icon" src="icons/upload.svg" alt="">
       </button>
       <button class="notofications-button">
-        <img class="notofications-icon" src="icons/notifications.svg" alt="">
+        <div>
+          <img class="notofications-icon" src="icons/notifications.svg" alt="">
+          <div class="notification-count">
+            9+
+          </div>
+        </div>
+        
       </button>
       <button class="current-user-button">
         <img class="current-user-icon" src="channel-pictures/my-channel.jpg" alt="">
       </button>
     </div>
   </header>
+
+  <div class="search-autocomplate-box">
+  </div>
 
   <nav class="sidebar">
     <div class="sidebar-link">
@@ -77,6 +86,9 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+          <div class="video-time">
+            14:20
+          </div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -343,7 +355,7 @@
   
     </section>  
   </main>
-  
+  <script src="scripts/autocomplete.js" ></script>
 </body>
 
 </html>
