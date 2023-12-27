@@ -148,16 +148,9 @@
 
 .search-button,
 .voice-search-button,
-.upload-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-
+.upload-button,
 .notifications-button {
-  display: flexbox;
+  display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -186,7 +179,7 @@
 .voice-search-button:hover .tooltip,
 .upload-button:hover .tooltip,
 .notifications-button:hover .tooltip {
-  opacity: 1;  
+  opacity: 1;
 }
 
 .current-user-button {
@@ -194,7 +187,7 @@
 }
 
 .upload-iocn,
-.notification {
+.notification-icon {
   height: 25px;
 }
 
