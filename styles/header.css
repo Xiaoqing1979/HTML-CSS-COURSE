@@ -118,7 +118,7 @@
 }
 
 .upload-button,
-.notofications-button,
+.notifications-button,
 .current-user-button {
   width: 44px;
   height: 44px;
@@ -126,7 +126,7 @@
   background-color: transparent;
 }
 
-.notofications-button {
+.notifications-button {
   position: relative;
 }
 
@@ -144,6 +144,49 @@
   padding-left: 5px;
   padding-right: 5px;
 
+}
+
+.search-button,
+.voice-search-button,
+.upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.notifications-button {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-button .tooltip,
+.notifications-button .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-button:hover .tooltip,
+.notifications-button:hover .tooltip {
+  opacity: 1;  
 }
 
 .current-user-button {
