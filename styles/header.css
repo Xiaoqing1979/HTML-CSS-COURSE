@@ -1,11 +1,9 @@
 .header {
-  height: 57px;
+  height: 55px;
   display: flex;
   flex-direction: row;
+  background-color: white;
   position: fixed;
-
-  /* border-bottom: 1px solid #dedede; */
-  margin-bottom: 20px;
 
   top: 0;
   left: 0;
@@ -36,7 +34,6 @@
   margin-left: 70px;
   margin-right: 35px;
   display: flex;
-  /* align-items: center; */
 }
 
 .search-bar {
@@ -90,6 +87,27 @@
   margin-top: 4px;
 }
 
+.search-autocomplate-box {
+
+  border-radius: 5px;
+  background-color: rgb(248, 248, 248);
+  font-size: 16px;
+}
+
+.search-autocomplate-box ul {
+  padding: 5px 5px;
+}
+
+.search-autocomplate-box ul li {
+  list-style: none;
+  padding: 5px 5px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* .search-autocomplate-box ul li :hover{
+  background-color: gray;
+} */
 
 .right-section {
   width: 200px;
@@ -106,6 +124,26 @@
   height: 44px;
   border: 0px;
   background-color: transparent;
+}
+
+.notofications-button {
+  position: relative;
+}
+
+.notification-count {
+  position: absolute;
+  background-color: rgb(185, 4, 4);
+  color: white;
+  font-size: 11px;
+  border-radius: 8px;
+  right: 0px;
+  top: 6px;
+
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+
 }
 
 .current-user-button {

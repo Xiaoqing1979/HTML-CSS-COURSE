@@ -2,12 +2,6 @@
   width: 100%;
 }
 
-.search-bar {
-  font-size: 20px;
-  /* margin-left: 12px; */
-  display: block;
-}
-
 .video-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -71,6 +65,7 @@
 
 .thumbnail-row {
   margin-bottom: 12px;
+  position: relative;
 }
 
 .thumbnail {
@@ -79,4 +74,16 @@
 
 .thumbnail:hover {
   border-radius: 0px;
+}
+
+.video-time{
+  background-color: black;
+  color: white;
+  width: 60;
+  height: 25;
+  position: absolute;
+
+  right: 5px;
+  bottom: 10px;
+  border-radius: 2px;
 }
