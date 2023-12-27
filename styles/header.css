@@ -37,18 +37,18 @@
   flex-direction: column;
 }
 
-.search-container{
-  display: flex;    
+.search-container {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.search-autocomplate-box{
+.search-autocomplate-box {
   position: absolute;
   top: 75px;
-  z-index: 300; 
-  max-height: 300px; 
-  overflow-x: scroll;
+  z-index: 300;
+  max-height: 300px;
+  overflow-y: scroll;
 }
 
 .search-bar {
