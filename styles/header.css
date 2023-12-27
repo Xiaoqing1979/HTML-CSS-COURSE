@@ -1,9 +1,9 @@
 .header {
-  height: 55px;
+  height: 58px;
   display: flex;
   flex-direction: row;
   background-color: white;
-  position: fixed;
+  /* position: fixed; */
 
   top: 0;
   left: 0;
@@ -34,6 +34,21 @@
   margin-left: 70px;
   margin-right: 35px;
   display: flex;
+  flex-direction: column;
+}
+
+.search-container{
+  display: flex;    
+  align-items: center;
+  justify-content: center;
+}
+
+.search-autocomplate-box{
+  position: absolute;
+  top: 75px;
+  z-index: 300; 
+  max-height: 300px; 
+  overflow-x: scroll;
 }
 
 .search-bar {
