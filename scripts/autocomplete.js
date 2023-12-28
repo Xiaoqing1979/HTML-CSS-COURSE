@@ -15,7 +15,6 @@ let avaibleKeywords = [
 const resultbox = document.querySelector(".search-autocomplate-box");
 const inputBox = document.getElementById("search-input-box");
 
-
 inputBox.onkeyup = () =>
 {
   let result = [];
@@ -37,6 +36,11 @@ inputBox.onkeyup = () =>
   if (!result.length)
   {
     resultbox.innerHTML = '';
+  }
+
+  if (event.keyCode === 13)
+  {
+    performGoogleSearch();
   }
 }
 

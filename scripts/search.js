@@ -1,11 +1,3 @@
-function handleKeyPress(event)
-{
-  if (event.keyCode === 13)
-  {
-    performGoogleSearch();
-  }
-}
-
 function performGoogleSearch()
 {
   var searchKeyword = document.getElementById('search-input-box').value;
@@ -17,9 +9,8 @@ function performGoogleSearch()
   }
 }
 
-var searchButton = document.getElementsByClassName('search-button');
+var searchButton = document.getElementById('search-button');
 searchButton.onclick = performGoogleSearch;
 
-var searchInputBox = document.getElementById('search-input-box');
-searchInputBox.onkeyup = handleKeyPress;
+
 
